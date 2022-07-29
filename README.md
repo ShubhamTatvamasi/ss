@@ -85,8 +85,20 @@ ss -t dst :22
 ss -t src :22
 ```
 
+Show source port connections:
+```bash
+ss -tan 'sport 22'
+```
 
+Get detailed information of the connection:
+```bash
+ss -ti src :22
+```
 
+Get socket usage summary:
+```bash
+ss -s
+```
 
 
 
